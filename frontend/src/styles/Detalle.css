@@ -1,0 +1,82 @@
+section {
+    display: grid;
+    place-items: center;
+}
+
+.receta-info {
+    border: 4px solid var(--cyan-D);
+    width: 70%;
+    min-height: 100vh;
+    margin-block: 100px;
+}
+
+.receta-info h1 {
+    text-align: center;
+    margin-top: 80px;
+    font-weight: 600;
+}
+
+.receta-info h2 {
+    font-size: 2rem;
+    color: var(--cyan-D);
+    font-weight: 600;
+    margin-block: 30px;
+
+    text-align: center;
+}
+
+.desc-receta {
+    display: grid;
+    place-items: center;
+    margin-block: 20px;
+    margin-inline: 60px;
+}
+
+.desc-receta p {
+    font-size: 1.5rem;
+    color: var(--cyan-D);
+}
+
+.medic-receta li {
+    margin-left: 200px;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    color: var(--cyan-D);
+}
+
+.solicitar {
+    display: grid;
+    place-items: center;
+    margin-block: 40px;
+  }
+  
+  .btn-solicitar {
+    background-color: var(--cyan-A);
+    color: white;
+    height: 70px;
+    width: 280px;
+    font-size: 20px;
+    font-weight: bolder;
+    border: 4px solid var(--cyan-B);
+    border-radius: 10%;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .btn-solicitar:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 1rem var(--cyan-B);
+  }
+  
+  .btn-solicitar:disabled {
+    background-color: #cccccc;
+    border-color: #cccccc;
+    cursor: not-allowed;
+    box-shadow: none;
+  }
+  
+  .btn-solicitar:disabled:hover {
+    transform: none;
+    box-shadow: none;
+  }
+  

@@ -1,0 +1,171 @@
+/* seccion de eventos y talleres */
+
+#title {
+    font-size: 2.5em;
+    text-align: center;
+    font-weight: bolder;
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
+
+.carrousel-section {
+    margin-top: 100px;
+    box-sizing: border-box;
+    height: 800px;
+}
+
+.carousel {
+    border: 15px solid var(--cyan-B);
+    background-color: var(--cyan-B);
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.carousel-item img {
+    height: 600px;
+    width: 1000px;
+}
+
+.carousel-caption {
+    color: var(--cyan-A);
+    background-color: rgba(35, 101, 119, 0.7);
+}
+
+.carousel-caption h2 {
+    font-weight: bold;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    top: -300px;
+    padding: 25px;
+    border-radius: 50%;
+    background-color: var(--cyan-A, 0.7);
+}
+
+/* Seccion de servicios */
+.section-services {
+    margin-top: 100px;
+    display: grid;
+    place-items: center;
+}
+
+
+.services {
+    margin: 0;
+    display: grid;
+    justify-content: space-around;
+    place-items: center;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+}
+
+.service-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--cyan-D);
+    width: 450px;
+    height: 480px;
+    border-radius: 10%;
+    gap: 10px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.service-card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 2rem rgba(0, 0, 0, .25);
+}
+
+.service-info {
+    display: grid;
+    place-items: center;
+    margin-block: 3em;
+}
+
+.service-info img {
+    width: 200px;
+    cursor: pointer;
+}
+
+.service-info p {
+    margin-block-start: 60px;
+    font-size: 38px;
+    cursor: pointer;
+}
+
+/* Seccion informacion */
+.section-info {
+    display: grid;
+    place-items: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    justify-content: space-around;
+}
+
+.ubication {
+    text-align: center;
+}
+
+.mapa {
+    margin-top: 20px;
+    width: 450px;
+    height: 300px;
+    margin-left: 40px;
+}
+
+
+.cesfam-info {
+    background-color: var(--cyan-B);
+    padding-block: 100px;
+    box-sizing: border-box;
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 10px;
+    gap: 50px;
+}
+
+.cesfam-info h3 {
+    font-size: 35px;
+    font-weight: bolder;
+    color: azure;
+    text-align: center;
+}
+
+.contact ul {
+    list-style: none;
+}
+
+.contact li {
+    color: azure;
+    font-size: 20px;
+    margin-top: 34px;
+}
+
+.horario {
+    text-align: center;
+}
+
+/* Responsive */
+@media screen and (max-width: 1100px) {
+    .carousel-item img {
+        width: 100%;
+    }
+    .carousel {
+        width: 600px;
+    }
+    .services {
+        grid-template-columns: 1fr;
+        gap: 100px;
+    }
+
+    .cesfam-info {
+        grid-template-columns: 1fr;
+        width: 600px;
+    }
+    .mapa {
+        margin-left: 0;
+    }
+}

@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root {
+  --cyan-A: #229AB5;
+  --cyan-B: #166475;
+  --cyan-C: #2FD0F5;
+  --cyan-D: #0A2E36;
+  --cyan-E: #2ABBDB;
+  --gray: #848484;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+  z-index: 1;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+p,
+a {
+  place-items: center;
+  font-weight: bolder;
+  font-size: larger;
+  color: azure;
+}
